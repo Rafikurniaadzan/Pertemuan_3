@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran Peserta</title>
+    <style>
+     
+        body {
+            background-color: #f0f7ff;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        
+      
+        h1 {
+            text-align: center;
+            color: #1e5ca8;
+        }
+
+       
+        form {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 60%;
+            margin: 0 auto 20px auto;
+        }
+
+        
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+       
+        th, td {
+            border: 1px solid #b5d2ed;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1a56ad;
+            color: white;
+            text-align: center;
+        }
+
+        
+        tr:nth-child(even) {
+            background-color: #e6f0fa;
+        }
+
+        /* Styling tombol */
+        .btn-kirim {
+            background-color: #1a56ad;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pendaftaran Peserta</h1>
+
+    <form>
+        <label>Nama:</label>
+        <input type="text" name="nama" value="Budi Santoso"><br><br>
+        
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="jk" value="L" checked> L
+        <input type="radio" name="jk" value="P"> P<br><br>
+        
+        <label>Jurusan:</label>
+        <select name="jurusan">
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+        </select><br><br>
+        
+        <button type="submit" class="btn-kirim">Kirim</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Budi Santoso</td>
+            <td>Informatika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sari Wulandari</td>
+            <td>Sistem Informasi</td>
+        </tr>
+    </table>
+
+</body>
+</html>
